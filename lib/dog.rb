@@ -61,7 +61,7 @@ def self.create_table
     LIMIT 1
   SQL
 
-  DB[:conn].execute(sql, id).map do |row|
+  DB[:conn].execute(sql,id).map do |row|
     swlf.new_from_db(row)
   end.first
 end
