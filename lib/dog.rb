@@ -55,7 +55,7 @@ def self.create_table
 
   def self.find_by_id
     sql = <<-SQL
-    SELECT * 
+    SELECT *
     FROM dogs
     WHERE id = ?
     LIMIT 1
