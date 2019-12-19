@@ -62,7 +62,7 @@ def self.create_table
   SQL
 
   DB[:conn].execute(sql, id).map do |row|
-    swlf.new_from_db(row)
+    self.new_from_db(row)
   end.first
 end
 
